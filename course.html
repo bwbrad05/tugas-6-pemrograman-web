@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Designer Courses</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#courses">Courses</a>
+        <a href="#more-info">More Information</a>
+        <a href="https://www.skillfinder.com.au/upskill-with/w3schools-online-courses" target="_blank">More Courses</a>
+    </div>
+
+    <header>Web Designer Courses</header>
+    
+    <div class="web-courses" id="courses">
+        <div class="wcourses">
+            <h3><a href="https://www.w3schools.com/html/" target="_blank">HTML</a></h3>
+            <p>HTML (HyperText Markup Language) is the foundation of web development. Learn to create the structure of web pages using elements like headings, paragraphs, and links.</p>
+            <p><strong>Duration:</strong> 4 weeks</p>
+            <p><strong>Level:</strong> Beginner</p>
+        </div>
+        
+        <div class="wcourses">
+            <h3><a href="https://www.w3schools.com/css/" target="_blank">CSS</a></h3>
+            <p>CSS (Cascading Style Sheets) is used for styling web pages. Learn how to design beautiful layouts, add colors, fonts, and responsiveness to websites.</p>
+            <p><strong>Duration:</strong> 5 weeks</p>
+            <p><strong>Level:</strong> Beginner to Intermediate</p>
+        </div>
+
+        <div class="wcourses">
+            <h3><a href="https://www.w3schools.com/js/" target="_blank">JavaScript</a></h3>
+            <p>JavaScript is a programming language that allows you to create interactive and dynamic web pages. Learn to add functionality to your websites, such as animations, forms, and more.</p>
+            <p><strong>Duration:</strong> 6 weeks</p>
+            <p><strong>Level:</strong> Intermediate</p>
+        </div>
+
+        <div class="wcourses">
+            <h3><a href="https://www.w3schools.com/react/" target="_blank">React</a></h3>
+            <p>React is a powerful JavaScript library for building user interfaces. Learn how to create scalable, fast, and modern web applications with React components and hooks.</p>
+            <p><strong>Duration:</strong> 8 weeks</p>
+            <p><strong>Level:</strong> Intermediate to Advanced</p>
+        </div>
+
+        <div class="wcourses">
+            <h3><a href="https://nextjs.org/learn" target="_blank">Next.js</a></h3>
+            <p>Next.js is a framework built on top of React, offering features like server-side rendering and static site generation. Learn how to create highly performant web applications with Next.js.</p>
+            <p><strong>Duration:</strong> 6 weeks</p>
+            <p><strong>Level:</strong> Intermediate to Advanced</p>
+        </div>
+    </div>
+
+    <div class="more-info" id="more-info">
+        <h2 style="text-align:center; margin-top: 50px;">Why Choose These Courses?</h2>
+        <p style="max-width: 800px; margin: auto; font-size: 18px; color: #fff; text-align: justify;">
+            These courses are designed to provide you with comprehensive knowledge of front-end development, including basic and advanced concepts. Whether you are just starting or want to enhance your skills, these courses will help you build a solid foundation in web development. From understanding HTML structure to mastering advanced frameworks like Next.js, you will be equipped with the tools necessary for creating professional web applications.
+        </p>
+    </div>
+
+    <script>
+        document.querySelectorAll('.navbar a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+
+    <footer>
+        <p>Find more resources and in-depth courses on <a href="https://www.w3schools.com/" target="_blank">this website</a>.</p>
+    </footer>
+</body>
+</html>
